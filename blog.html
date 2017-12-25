@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Обо мне</title>
+    <title></title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -15,6 +15,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <div class="header__bg-title"> <img src="images/bg/portfolio_header.png"></div>
         <div class="header__links">
           <ul class="header__list">
             <li class="header__item"><a class="header__item_link" href=""><img src="images/icons/vk.svg" alt=""></a></li>
@@ -29,8 +30,10 @@
         </div>
         <div id="arrow__down"><a class="arrow__down_link" href="#"><img src="../../images/icons/arrow_down.svg" alt=""></a></div>
         <div class="header__triangle">
-          <div class="header__triangle_left"></div>
-          <div class="header__triangle_right"></div>
+          <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="traingle__left" points="0,0 0,86 500.8,86 500.8,75.5"></polygon>
+            <polygon class="traingle__right" points="1000,0 1000,86 500,86 500,75.5"></polygon>
+          </svg>
         </div>
       </header>
       <div class="section blog">
@@ -78,9 +81,18 @@
           <div class="footer__right">
             <div class="socials-icons">
               <ul class="socials">
-                <li class="socials__item"><a class="social__link" href="#"><img class="social__link_img" src="images/icons/vk_round.svg" alt=""></a></li>
-                <li class="socials__item"><a class="social__link" href="#"><img class="social__link_img" src="images/icons/github_round.svg" alt=""></a></li>
-                <li class="socials__item"><a class="social__link" href="#"><img class="social__link_img" src="images/icons/in_round.svg" alt=""></a></li>
+                <li class="socials__item"><a class="social__link" href="#">
+                    <svg class="icon vk_round" width="55" height="55">
+                      <use xlink:href="images/icons/sprite.svg#vk_round"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="social__link" href="#">
+                    <svg class="icon github_round" width="55" height="55">
+                      <use xlink:href="images/icons/sprite.svg#github_round"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="social__link" href="#">
+                    <svg class="icon in_round" width="55" height="55">
+                      <use xlink:href="images/icons/sprite.svg#in_round"></use>
+                    </svg></a></li>
               </ul>
             </div>
           </div>
